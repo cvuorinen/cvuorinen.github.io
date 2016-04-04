@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hi! I am Carl Vuorinen and this is my blog. I am a web developer with about 10 years of experience in web development and PHP is my language of choice. I have worked most of that time in a Finnish software development company [W3 Group](http://w3.fi) where I am currently a partner and work as a team lead. Lately I have been working mostly with Symfony2 and before that with Zend Framework, Drupal and various other frameworks, CMS's, eCommerce solutions and plain PHP stuff. I live in Järvenpää, Finland with my wife and two beautiful daughters.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+My main motivation behind starting this blog is that I want to improve my writing skills and also to have someplace to post random web development related notes for later reference. Thanks for reading and please post a comment if you find anything that you like (or don't like).
