@@ -15,6 +15,17 @@ github_username:  cvuorinen
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: /:year/:month/:title/
 excerpt_separator: <!--more-->
+
+# Front Matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: cvuorinen
+      comments: true
