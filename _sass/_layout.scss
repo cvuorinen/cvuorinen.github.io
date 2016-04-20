@@ -100,6 +100,10 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+
+    a:hover {
+        text-decoration: none;
+    }
 }
 
 .footer-heading {
@@ -107,10 +111,36 @@
     margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
+.page-list {
+    li {
+        margin: 5px 0;
+    }
+}
+
 .social-media-list {
     list-style: none;
     margin-left: 0;
+
+    li {
+        margin: 10px 0;
+
+        i.fa {
+            vertical-align: middle;
+            padding-right: 5px;
+        }
+    }
+
+    .social-media-twitter a:hover {
+        color: #00aced;
+    }
+
+    .social-media-github a:hover {
+        color: #333;
+    }
+
+    .social-media-rss a:hover {
+        color: #d65600;
+    }
 }
 
 .footer-col-wrapper {
@@ -118,6 +148,10 @@
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
+
+    a {
+        color: $grey-color;
+    }
 }
 
 .footer-col {
@@ -192,6 +226,10 @@
 .post-link {
     display: block;
     font-size: 24px;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 
@@ -216,6 +254,18 @@
 .post-content {
     margin-bottom: $spacing-unit;
 
+    p {
+        margin-bottom: $spacing-unit;
+    }
+
+    a {
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
     h2 {
         font-size: 32px;
 
@@ -239,4 +289,57 @@
             font-size: 18px;
         }
     }
+}
+
+.post-footer {
+    clear: both;
+    text-align: center;
+
+    .social-share {
+        li {
+            padding: 0 10px;
+        }
+        a {
+            color: rgba(200, 200, 200, 0.8);
+
+            &:hover {
+                color: rgba(100, 100, 100, 0.8);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/**
+ * Images
+ */
+.post-content img {
+    max-width: 100%;
+    height: auto;
+}
+.alignleft,
+.alignright,
+.alignnone {
+    display: inline-block;
+    margin-bottom: 1.5em;
+    border: 1px solid #ddd;
+    padding: 6px;
+    max-width: 97.5%;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    float: right;
+    margin-left: 1.5em;
+}
+
+.caption {
+    margin: 0;
+    padding: 6px;
+    color: #888;
+    font-style: italic;
 }

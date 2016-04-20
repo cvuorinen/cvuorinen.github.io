@@ -1,0 +1,32 @@
+<ul class="social-media-list">
+    {% if site.twitter_username %}
+    <li class="social-media-twitter">
+        <a href="https://twitter.com/{{ site.twitter_username }}">
+            <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+            <span class="name">{{ site.twitter_username }}</span>
+        </a>
+    </li>
+    {% endif %}
+
+    {% if site.github_username %}
+    <li class="social-media-github">
+        <a href="https://github.com/{{ site.github_username }}">
+            <i class="fa fa-2x fa-github"></i>
+            <span class="name">{{ site.github_username }}</span>
+        </a>
+    </li>
+    {% endif %}
+
+    <li class="social-media-rss">
+        <a href="/feed.xml">
+            <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+            </span>
+            <span class="name">RSS</span>
+        </a>
+    </li>
+</ul>

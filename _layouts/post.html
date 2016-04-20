@@ -12,6 +12,10 @@ layout: default
     {{ content }}
   </div>
 
+  <footer class="post-footer">
+    {% if page.share != false %}{% include social-share.html %}{% endif %}
+  </footer>
+
   {% if page.comments and jekyll.environment == "production" %}
     {% include disqus.html %}
   {% endif %}
