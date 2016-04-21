@@ -1,0 +1,23 @@
+---
+layout: default
+title: Tag Archive
+description: "An archive of posts sorted by tag."
+comments: false
+---
+
+<div class="tags">
+    {% for tag in site.tags %}
+        {% assign this_tag = tag | first %}
+        {% assign posts = tag | last %}
+
+    <h2 id="{{ this_tag | slugify }}" class="tag-heading">{{ this_tag }}</h2>
+
+    <ul class="post-list">
+        {% for post in posts %}
+        {% if post.tags contains this_tag %}
+            {% include post-excerpt.html %}
+        {% endif %}
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</div>
