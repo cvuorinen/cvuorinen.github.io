@@ -12,6 +12,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cvuorinen.net" # the base hostname & protocol for your site
 twitter_username: cvuorinen
 github_username:  cvuorinen
+google_analytics: "UA-35040029-1"
 
 # Build settings
 markdown: kramdown
