@@ -11,9 +11,9 @@ tags:
 
 After the recent PHP User Group Finland meeting I started thinking the presentation I gave at PHPUG Finland a few years ago and decided to post the slides here since I didn't have a blog at the time to post them in. So, here are the slides from my PHP User Group Finland talk 24.11.2011 (in Finnish). The talk is titled Tietoturva Web -kehityksessä &amp; Zend Frameworkissä (Security in Web Development &amp; Zend Framework) and it was a two-part session between me first covering few of the most critical security threats in web applications and how to prevent them in Zend Framework and after that Matti Suominen demonstrated how these threats can be exploited in practice.
 
-The topics covered in the presentation are SQL injection, Cross-site scripting (XSS), Cross-site request forgery (CSRF) and password hashing. After about 1,5 years, the points made and the tools presented in the talk are still mostly relevant, but Zend Framework 1 has since been surpassed by newer frameworks, namely Symfony2 and Zend Framework 2. So I decided to revisit these topics a little bit in this post in regard to todays standards.
-
 <!--more-->
+
+The topics covered in the presentation are SQL injection, Cross-site scripting (XSS), Cross-site request forgery (CSRF) and password hashing. After about 1,5 years, the points made and the tools presented in the talk are still mostly relevant, but Zend Framework 1 has since been surpassed by newer frameworks, namely Symfony2 and Zend Framework 2. So I decided to revisit these topics a little bit in this post in regard to todays standards.
 
 Here are the slides of the talk (in Finnish):
 <iframe style="border: 1px solid #CCC; border-width: 1px 1px 0; margin-bottom: 5px;" src="http://www.slideshare.net/slideshow/embed_code/15055214" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="427" height="356"></iframe>

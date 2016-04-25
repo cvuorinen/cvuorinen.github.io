@@ -15,11 +15,11 @@ image: 2015/10/21841427221_54fd930a0d_z.jpg
 
 A week ago I attended the first [Bulgaria PHP Conference](http://www.bgphp.org/) that was organized on September 26th and 27th 2015 in Sofia. Even though it was the first PHP conference in Bulgaria, the event was a real success. The venue was spectacular, the atmosphere was laid-back but still enthusiastic and energetic and the speaker line-up was very impressive.
 
+<!--more-->
+
 I presented a talk about AngularJS, yes a JavaScript talk even though it was a PHP conference. The organizers said that they wanted to have a diverse set of talks that includes something that you don’t come across at every PHP conference. AngularJS is the most popular JS framework at the moment, so many of us PHP developers get/have to work with it. There were also talks about topics such as testing, security, monitoring, graph databases, mentoring, data handling, API design and many others.
 
 I could write a brief summary of all the talks I saw, or I could iterate over the things I learned, or tell you more about how well the conference was organized (but [others](http://devwp.eu/bulgaria-php-conference-day-1-recap/) have already done [those](http://andreas.heigl.org/2015/09/28/bulgaria-php-conference/)). I thought instead that I would write about a topic that has been on my mind since the event. And that’s the PHP community.
-
-<!--more-->
 
 Both local and global communities have formed around many different technologies. Communities where developers share experiences, ask questions and help each other. Especially around open source technologies, there are many communities where the important things are not money, fame or who is the best, but instead sharing, openness and helping others without expectations or hidden agendas. And at least from my own experiences I can say that it is great to be a part of the global PHP community. Even though many of the speakers are well-known from different conferences around the world, or from popular open source projects, or work for some of the worlds largest tech companies, the atmosphere is warm and relaxed and nobody seems to think that they are “above others”.
 

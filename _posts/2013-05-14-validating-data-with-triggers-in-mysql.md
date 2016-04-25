@@ -8,9 +8,9 @@ tags:
 
 MySQL triggers can be used to create some validation conditions that are a little bit more complex than what can be achieved with basic data types and unique index for example. The reason why data validation is better kept at the database level rather than application level is that in case the same data source is used by multiple applications, or even multiple interfaces within the same application, is that you can rely on the data being consistent and valid regardless the validation logic on the application side, which might not always be consistent across different implementations.
 
-So why triggers are ideal for this kind of logic? Triggers can be executed before data is inserted or updated into the database, and you have the values that would be inserted to the database at your disposal, as well as the old values of the row in case of an update. The insert or update can also be prevented from actually executing from the trigger with an error message. This makes it an ideal place to consistently enforce some validation logic in my opinion.
-
 <!--more-->
+
+So why triggers are ideal for this kind of logic? Triggers can be executed before data is inserted or updated into the database, and you have the values that would be inserted to the database at your disposal, as well as the old values of the row in case of an update. The insert or update can also be prevented from actually executing from the trigger with an error message. This makes it an ideal place to consistently enforce some validation logic in my opinion.
 
 There are many great tutorials about MySQL triggers, so I will not write about that. If you are not familiar with triggers, I suggest you first read a [tutorial](http://net.tutsplus.com/tutorials/databases/introduction-to-mysql-triggers/) or [a few](http://www.sitepoint.com/how-to-create-mysql-triggers/), or check out the [MySQL manual](http://dev.mysql.com/doc/refman/5.5/en/triggers.html).
 

@@ -9,13 +9,13 @@ tags:
 
 Recently I had to update a Drupal multisite installation with 62 sites. The whole process felt a little bit daunting at first, but I managed to pull it off quite easily after all thanks to good preparation and research beforehand. So I decided to document my experience for later reference (to myself and others). Please share in the comments if you find it useful.
 
+<!--more-->
+
 ## Drush is your friend
 
 I had used Drush previously so I knew it can be a real time saver. For anyone reading this who is not familiar with [Drush](http://drush.ws/), it is a command line tool used to manage a Drupal installation and run all kinds of Drupal commands. Such as: run cron, clear caches, make backups, install modules etc. If you do Drupal development and are not using Drush, you really should. It saves you time and makes working with Drupal more enjoyable by not having to click around the Drupal admin interface that much. Drush is your friend.
 
 In a multisite installation you have to tell Drush which site you want to run the command on (or if you don't, by default the command will be run on the default site). Luckily there is also a **@sites** keyword that executes the command on all sites of a multisite installation. It will list all the sites and ask for a confirmation before executing, so you always know when you are running a command on multiple sites.
-
-<!--more-->
 
 ## The Drupal update process
 

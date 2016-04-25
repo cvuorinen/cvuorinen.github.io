@@ -5,7 +5,10 @@ categories:
 tags:
   - Clean Code
 ---
+
 Clean code is something that I have been interested in for a while now, and plan to write a series of blog posts about the different concepts related to clean code. In this introduction post to the series I will talk a little bit about what clean code actually is and also try to answer the question why should you care about clean code.
+
+<!--more-->
 
 ## What is Clean Code?
 
@@ -16,8 +19,6 @@ After reading a few books on the topic, giving it some thought and delivering a 
 > Clean code is code that is easy to understand and easy to change.
 
 Ok, that sounds nice, but what does it really mean? Let's break that sentence apart and examine the individual points behind it.
-
-<!--more-->
 
 Easy to understand means the code is easy to read, whether that reader is the original author of the code or somebody else. It's meaning is clear so it minimizes the need for guesswork and possibility for misunderstandings. It is easy to understand on every level, specifically:
 

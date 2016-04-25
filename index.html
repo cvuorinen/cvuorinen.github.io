@@ -4,12 +4,14 @@ layout: default
 
 <div class="home">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
+  <ul class="post-list no-bullets">
+    {% for post in site.posts | limit:10 %}
       {% include post-excerpt.html %}
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p>See older posts in the <a href="/archive">Posts Archive</a>.</p>
+
+  <p class="rss-subscribe">Subscribe via <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i> RSS</a></p>
 
 </div>

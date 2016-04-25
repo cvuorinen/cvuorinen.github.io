@@ -191,12 +191,54 @@ pre {
 /**
  * Lists
  */
-.inline-list {
+ul {
+    padding-left: 10px;
+}
+li {
+    list-style-type: none;
+
+    &::before {
+        display: inline-block;
+        content: "\2014";
+        position: relative;
+        margin-left: -20px;
+        left: -10px;
+    }
+}
+.inline-list,
+.no-bullets {
     list-style: none;
+    li {
+        list-style-type: none;
+
+        &::before {
+            content: "";
+            margin-left: 0;
+            left: 0;
+        }
+    }
+}
+.inline-list {
     margin-left: 0;
     padding-left: 0;
     li {
-        list-style-type: none;
         display: inline;
+    }
+}
+
+
+
+/**
+ * Lines
+ */
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    &.separator {
+        clear: both;
+        margin-bottom: $spacing-unit;
     }
 }

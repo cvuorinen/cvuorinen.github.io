@@ -20,11 +20,14 @@ layout: default
     {{ content }}
   </div>
 
+  <hr class="separator">
+
   <footer class="post-footer">
     {% if page.share != false %}{% include social-share.html %}{% endif %}
   </footer>
 
   {% if page.comments and jekyll.environment == "production" %}
+    <hr class="separator">
     {% include disqus.html %}
   {% endif %}
 

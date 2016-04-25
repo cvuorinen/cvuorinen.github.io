@@ -12,9 +12,9 @@ tags:
 
 In this post I am going to describe the method we set up with a few coworkers for testing models in Zend Framework projects. We are using fixtures to ensure our database is in a consistent state for the tests and we wanted to run the tests on the same machine we are using for development, but usually the database you use for development is full of data that you don't want to lose. We also wanted to be able to run the tests easily on any new dev machine, test server, continous integration server etc.
 
-So we decided to use a completely separate SQLite database for testing. SQLite seemed ideal since it would not need anything installed or configured, it should just work on any machine. There is also the very handy [in-memory database](http://www.sqlite.org/inmemorydb.html) that is great for this use case, since the database is only needed while running the tests, it's faster and it does not require any file/directory permissions to be modified in order to work.
-
 <!--more-->
+
+So we decided to use a completely separate SQLite database for testing. SQLite seemed ideal since it would not need anything installed or configured, it should just work on any machine. There is also the very handy [in-memory database](http://www.sqlite.org/inmemorydb.html) that is great for this use case, since the database is only needed while running the tests, it's faster and it does not require any file/directory permissions to be modified in order to work.
 
 ## Configuration
 

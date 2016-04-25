@@ -6,14 +6,19 @@ comments: false
 exclude: true
 ---
 
+<h1 class="post-title">Tag Archive</h1>
+
 <div class="tags">
     {% for tag in site.tags %}
         {% assign this_tag = tag | first %}
         {% assign posts = tag | last %}
 
-    <h2 id="{{ this_tag | slugify }}" class="tag-heading">{{ this_tag }}</h2>
+    <h2 id="{{ this_tag | slugify }}" class="tag-heading">
+        <i class="fa fa-tag"></i>
+        {{ this_tag }}
+    </h2>
 
-    <ul class="post-list">
+    <ul class="post-list no-bullets">
         {% for post in posts %}
         {% if post.tags contains this_tag %}
             {% include post-excerpt.html %}

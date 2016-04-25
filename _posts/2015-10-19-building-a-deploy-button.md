@@ -12,9 +12,7 @@ tags:
 
 I recently got a [Olimex A20-OLinuXino-LIME](https://www.olimex.com/wiki/A20-OLinuXino-LIME) mini computer as a speaker gift for [speaking at the Bulgaria PHP Conference]({% post_url 2015-10-05-bulgaria-php-conference-2015-the-php-community %}). It's quite similar to a Raspberry Pi, it has few USB ports, Ethernet port, HDMI output and some GPIO pins to hook up some electronics. Quite a lot of GPIO pins actually, a lot more than on Raspberry Pi. And it runs Debian Linux from an SD card. So it's perfect for doing some hardware hacking and I have been building something on it last week.
 
-I decided to build a deploy button for a project I'm working on at work. We are using [Jenkins CI server]({% post_url 2013-06-30-installing-jenkins-ci-server-with-github-integration-for-a-php-project %}) and Capistrano for deploying. So the idea was to show build status from Jenkins with two LEDs, green when last build has succeeded and red when last build has failed. And blink the LED while a build is in progress, just as the icons in Jenkins web interface. And then pressing a button would execute a deploy using Capistrano (if the last build was successful).
-
-<!--more-->
+I decided to build a deploy button for a project I'm working on at work. <!--more--> We are using [Jenkins CI server]({% post_url 2013-06-30-installing-jenkins-ci-server-with-github-integration-for-a-php-project %}) and Capistrano for deploying. So the idea was to show build status from Jenkins with two LEDs, green when last build has succeeded and red when last build has failed. And blink the LED while a build is in progress, just as the icons in Jenkins web interface. And then pressing a button would execute a deploy using Capistrano (if the last build was successful).
 
 There is a Python library for interfacing with the GPIO pins and I also found a nice Python library for interacting with Jenkins. There is also an [experimental PHP extension](https://github.com/JakDaniels/php-A10Lime) for the OLinuXino GPIO interface, but I thought this would be a nice little project to brush up my Python skills, since I haven't used it that much so I wanted to do it in Python.
 
