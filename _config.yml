@@ -7,9 +7,10 @@
 
 # Site settings
 title: Cvuorinen.net
-description: Dev notes & thoughts about PHP and web development
+description: Dev notes & thoughts about web development
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cvuorinen.net" # the base hostname & protocol for your site
+logo: "apple-touch-icon.png"
 twitter_username: cvuorinen
 github_username:  cvuorinen
 google_analytics: "UA-35040029-1"

@@ -1,5 +1,6 @@
 ---
 title: Bulgaria PHP Conference 2015 & the PHP Community
+description: I visited the first Bulgaria PHP Conference in Sofia and experienced the PHP community first hand.
 categories:
   - Conferences
 tags:
@@ -7,6 +8,7 @@ tags:
   - Community
   - Conference
   - PHP
+image: 2015/10/21841427221_54fd930a0d_z.jpg
 ---
 
 <a href="https://www.flickr.com/photos/bgphp/21841427221/"><img class="alignnone" src="/assets/images/2015/10/21841427221_54fd930a0d_z.jpg" width="640" /></a>
