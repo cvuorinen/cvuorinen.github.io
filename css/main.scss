@@ -46,6 +46,35 @@ $on-laptop:        800px;
 }
 
 
+// Markdown style headings with #
+@function str-repeat($string, $times) {
+  $result: "";
+
+  @for $i from 1 through $times {
+    $result: $result + $string;
+  }
+
+  @return $result;
+}
+@mixin markdown-title($level) {
+  $width: .7em * $level;
+  margin-left: $width;
+
+  &:before {
+    content: str-repeat("#", $level);
+    display: inline-block;
+    width: $width - .2em;
+    margin-left: -$width;
+    padding-right: .2em;
+    color: lighten($text-color, 55%);
+    text-align: right;
+    font-family: monospace;
+    font-size: .9em;
+    letter-spacing: normal;
+  }
+}
+
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

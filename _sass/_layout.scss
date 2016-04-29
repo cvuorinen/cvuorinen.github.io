@@ -217,6 +217,13 @@ a.post-link {
  */
 .post-header {
     margin-bottom: $spacing-unit;
+
+    .post-meta {
+        margin-left: 35px;
+        @include media-query($on-laptop) {
+            margin-left: 25px;
+        }
+    }
 }
 
 .post-title {
@@ -224,6 +231,8 @@ a.post-link {
 
     letter-spacing: -3px;
     line-height: 1.1;
+
+    @include markdown-title(1);
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -249,6 +258,9 @@ a.post-link {
     h2 {
         font-size: 32px;
         letter-spacing: -1px;
+        line-height: 1.1;
+
+        @include markdown-title(2);
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -257,6 +269,9 @@ a.post-link {
 
     h3 {
         font-size: 26px;
+        line-height: 1.1;
+
+        @include markdown-title(3);
 
         @include media-query($on-laptop) {
             font-size: 22px;
@@ -265,6 +280,9 @@ a.post-link {
 
     h4 {
         font-size: 20px;
+        line-height: 1.1;
+
+        @include markdown-title(4);
 
         @include media-query($on-laptop) {
             font-size: 18px;
@@ -342,3 +360,5 @@ a.post-link {
         font-weight: bold;
     }
 }
+
+
