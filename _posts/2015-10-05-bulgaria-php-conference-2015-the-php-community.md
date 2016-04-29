@@ -8,10 +8,12 @@ tags:
   - Community
   - Conference
   - PHP
-image: 2015/10/21841427221_54fd930a0d_z.jpg
+image:
+    src: 2015/10/21841427221_54fd930a0d_z.jpg
+    link: https://www.flickr.com/photos/bgphp/21841427221/
+    alt: Bulgaria PHP Conference
+    align: none
 ---
-
-<a href="https://www.flickr.com/photos/bgphp/21841427221/"><img class="alignnone" src="/assets/images/2015/10/21841427221_54fd930a0d_z.jpg" width="640" /></a>
 
 A week ago I attended the first [Bulgaria PHP Conference](http://www.bgphp.org/) that was organized on September 26th and 27th 2015 in Sofia. Even though it was the first PHP conference in Bulgaria, the event was a real success. The venue was spectacular, the atmosphere was laid-back but still enthusiastic and energetic and the speaker line-up was very impressive.
 

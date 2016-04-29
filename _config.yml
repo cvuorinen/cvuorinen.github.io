@@ -29,5 +29,5 @@ defaults:
       type: "posts"
     values:
       layout: post
-      author: cvuorinen
+      author: Carl Vuorinen
       comments: true

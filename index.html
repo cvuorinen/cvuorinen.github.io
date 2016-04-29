@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-  <ul class="post-list no-bullets">
+  <ul class="post-list no-bullets" itemscope itemtype="http://schema.org/Blog">
     {% for post in site.posts | limit:10 %}
       {% include post-excerpt.html %}
     {% endfor %}

@@ -2,21 +2,30 @@
 layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+  <meta itemprop="description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip_newlines | truncate: 100 }}{% endif %}" />
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <p class="post-meta">
       <i class="fa fa-calendar-check-o"></i>
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-      {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished dateModified">{{ page.date | date: "%b %-d, %Y" }}</time>
+      {% if page.author %} • <span itemprop="author creator publisher" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
       {% if page.tags %}
         <br><i class="fa fa-tags"></i> Tags:
-        <span class="post-tags">{% for tag in page.tags %}<a href="/tags/#{{ tag | slugify }}" title="Pages tagged {{ tag }}" class="tag"><span class="term">{{ tag }}</span></a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+        <span class="post-tags">{% for tag in page.tags %}<a href="/tags/#{{ tag | slugify }}" title="Pages tagged {{ tag }}" class="tag"><span class="term" itemprop="keywords">{{ tag }}</span></a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
       {% endif %}
     </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
+    {% if page.image %}
+      <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <a href="{{ page.image.link }}"><img class="align{{ page.image.align }}" itemprop="image" src="/assets/images/{{ page.image.src }}" alt="{{ page.image.alt }}" /></a>
+        <meta itemprop="url" content="{{ site.url }}/assets/images/{{ page.image.src }}">
+      </div>
+    {% endif %}
+
     {{ content }}
   </div>
 

@@ -18,7 +18,7 @@ exclude: true
         {{ this_tag }}
     </h2>
 
-    <ul class="post-list no-bullets">
+    <ul class="post-list no-bullets" itemscope itemtype="http://schema.org/Blog">
         {% for post in posts %}
         {% if post.tags contains this_tag %}
             {% include post-excerpt.html %}
