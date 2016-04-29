@@ -1,19 +1,20 @@
 <div class="social-share">
-    <ul class="inline-list">
-        <li class="facebook">
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" target="_blank">
-                <i class="fa fa-facebook-square"></i> Like
-            </a>
-        </li>
-        <li class="twitter">
-            <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" title="Share on Twitter" target="_blank">
-                <i class="fa fa-twitter-square"></i> Tweet
-            </a>
-        </li>
-        <li class="googleplus">
-            <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google+" target="_blank">
-                <i class="fa fa-google-plus-square"></i> +1
-            </a>
-        </li>
-    </ul>
+    <p>
+        Thanks for reading. If you liked this post, you can share it in 
+        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" title="Share on Twitter" target="_blank">
+            <i class="fa fa-twitter"></i> Twitter</a>,
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" target="_blank">
+            <i class="fa fa-facebook"></i> Facebook
+        </a> or
+        <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google+" target="_blank">
+            <i class="fa fa-google-plus"></i> Google+
+        </a>.
+    </p>
+    <p>
+        To get notified about new posts, you can subscribe via
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i> RSS</a>
+        or follow me on
+        <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+            <i class="fa fa-twitter"></i> Twitter</a>.
+    </p>
 </div>

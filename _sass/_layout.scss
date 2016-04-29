@@ -293,18 +293,17 @@ a.post-link {
 .post-footer {
     clear: both;
     text-align: center;
+    margin: 0 20%;
+
+    @include media-query($on-palm) {
+        margin: 0;
+    }
 
     .social-share {
-        li {
-            padding: 0 10px;
-        }
-        a {
-            color: rgba(200, 200, 200, 0.8);
+        color: lighten($text-color, 30%);
 
-            &:hover {
-                color: rgba(100, 100, 100, 0.8);
-                text-decoration: none;
-            }
+        a {
+            white-space: nowrap;
         }
     }
 }
