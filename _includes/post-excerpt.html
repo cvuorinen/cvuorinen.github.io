@@ -7,6 +7,13 @@
         </a>
     </h2>
 
+    {% if post.image %}
+    <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+        <a href="{{ post.url | prepend: site.baseurl }}"><img class="align{{ post.image.align }}" itemprop="image" src="/assets/images/{{ post.image.src }}" alt="{{ post.image.alt }}" /></a>
+        <meta itemprop="url" content="{{ site.url }}/assets/images/{{ post.image.src }}">
+    </div>
+    {% endif %}
+
     <div itemprop="description">{{ post.excerpt }}</div>
 
     <p>
