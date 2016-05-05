@@ -31,3 +31,6 @@ defaults:
       layout: post
       author: Carl Vuorinen
       comments: true
+
+gems:
+  - jekyll-gist
