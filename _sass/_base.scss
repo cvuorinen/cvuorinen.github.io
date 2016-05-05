@@ -193,16 +193,17 @@ pre {
  */
 ul {
     padding-left: 10px;
-}
-li {
-    list-style-type: none;
 
-    &::before {
-        display: inline-block;
-        content: "\2014";
-        position: relative;
-        margin-left: -20px;
-        left: -10px;
+    & > li {
+        list-style-type: none;
+
+        &::before {
+            display: inline-block;
+            content: "\2014";
+            position: relative;
+            margin-left: -20px;
+            left: -10px;
+        }
     }
 }
 .inline-list,
