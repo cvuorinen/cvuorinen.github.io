@@ -47,7 +47,7 @@ After we have the input values as an observable, we need to create the autocompl
 5. Search GitHub using [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and convert the response to an Observable
 6. Since we mapped the keyword to the search function that returned an Observable, we now have an Observable of Observables. So we use `switch` to flatten it back to a single Observable that will emit the search results. This will also discard the previous inner Observable if it was still running, making sure we get the results in correct order even if the network requests don't complete in the same order that they were sent.
 7. We then use `digest` method (added by _rx.angular.js_) to assign the emitted values to a property on the scope. This is needed since we need to trigger a digest cycle because we used Fetch instead of $http service.
-8. Finally we have an empty subscription. It's empty since we already assigned the emitted value to the scope, but it's needed since Observables are lazy so nothing will happen if there are no subscriptions.
+8. Finally we have an empty subscription. It's empty since we already assigned the emitted value to the scope, but it's needed because Observables are lazy so nothing will happen if there are no subscriptions.
 
 Here is a link to a working JS Bin: [jsbin.com/fekimuz](http://jsbin.com/fekimuz/edit?js,output)
 
@@ -93,7 +93,7 @@ Most of it is the same as before, here are the key differences:
 
 * We create the Observable using the `fromEvent` method and pass in a reference to the input element. Since we are not using any Angular features here, there are no digests cycles happening on every key stroke.
 * Since the Observable will now emit the native DOM event, we need to dig out the actual input field string value (from the target.value property on the event).
-* After thet it's exactly the same as in the first example, except that there is no subscription and we store a reference to the final observable in a property on the scope (`scope.suggestions`).
+* After that it's exactly the same as in the first example, except that there is no subscription and we store a reference to the final observable in a property on the scope (`scope.suggestions`).
 * Finally, in the view we use the Async filter on `suggestions`, which will subscribe to it and update the view when a new value is emitted. We also need to pass the current scope to it using `async:this` so that it can trigger a digest cycle, otherwise we would not see anything appear in the `ng-repeat`.
 
 Working JS Bin: [jsbin.com/kelutu](http://jsbin.com/kelutu/edit?js,output)
