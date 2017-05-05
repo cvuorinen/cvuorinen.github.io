@@ -21,7 +21,7 @@ There is nothing new in running Karma tests without a browser window, you have b
 
 ## Conf your Karma
 
-Whether you have a Karma config generated with Angular CLI or one that you have created manually, you can use a config option called **customLaunchers** to create a new launcher based on an existing one by defining additional flags for it. To use Chrome in headless mode, you need to add the following to your `karma.conf.js`
+Whether you have a Karma config generated with Angular CLI or one that you have created manually, you can use a config option called **customLaunchers** to create a new launcher based on an existing one by defining additional flags for it. This works equally with older AngularJS v1.x projects as well as newer Angular v2.x-4.x projects. To use Chrome in headless mode, you need to add the following section to your `karma.conf.js`
 
 ```
 customLaunchers: {
