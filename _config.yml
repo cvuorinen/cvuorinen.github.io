@@ -9,7 +9,7 @@
 title: Cvuorinen.net
 description: Dev notes & thoughts about web development
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://cvuorinen.net" # the base hostname & protocol for your site
+url: "https://cvuorinen.net" # the base hostname & protocol for your site
 logo: "apple-touch-icon.png"
 twitter_username: cvuorinen
 github_username:  cvuorinen
@@ -32,5 +32,5 @@ defaults:
       author: Carl Vuorinen
       comments: true
 
-gems:
+plugins:
   - jekyll-gist

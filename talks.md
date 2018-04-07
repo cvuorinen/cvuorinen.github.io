@@ -9,7 +9,7 @@ This is a list of talks I have given at conferences:
 [**Testing Angular apps**](https://2018.ngvikings.org/schedule/day1?sessionId=120)<br>
 Presented on Mar 1, 2018 at ngVikings in Espoo, Finland<br>
 [ [Video](https://youtu.be/rjXJtIEQ3rw) |
-[Slides](http://cvuorinen.net/testing-angular-apps-slides/) ]<br>
+[Slides](https://cvuorinen.github.io/testing-angular-apps-slides/) ]<br>
 
 [**AngularJS internals**](https://joind.in/14873)<br>
 Presented on Sep 26, 2015 at Bulgaria PHP Conference in Sofia, Bulgaria
