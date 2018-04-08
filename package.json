@@ -1,0 +1,8 @@
+{
+  "name": "cvuorinen.net",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "JEKYLL_ENV=production jekyll build && npx netlify-cli deploy"
+  }
+}
