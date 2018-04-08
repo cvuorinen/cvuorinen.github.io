@@ -32,5 +32,8 @@ defaults:
       author: Carl Vuorinen
       comments: true
 
+include:
+  - _redirects
+
 plugins:
   - jekyll-gist
