@@ -16,8 +16,9 @@ After the recent PHP User Group Finland meeting I started thinking the presentat
 The topics covered in the presentation are SQL injection, Cross-site scripting (XSS), Cross-site request forgery (CSRF) and password hashing. After about 1,5 years, the points made and the tools presented in the talk are still mostly relevant, but Zend Framework 1 has since been surpassed by newer frameworks, namely Symfony2 and Zend Framework 2. So I decided to revisit these topics a little bit in this post in regard to todays standards.
 
 Here are the slides of the talk (in Finnish):
-<iframe style="border: 1px solid #CCC; border-width: 1px 1px 0; margin-bottom: 5px;" src="http://www.slideshare.net/slideshow/embed_code/15055214" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="427" height="356"></iframe>
-<div style="margin-bottom: 5px;"><strong> <a title="Tietoturva web-kehityksessä &amp; Zend Frameworkissä" href="http://www.slideshare.net/cvuorinen/tietoturva-webkehityksess-zend-frameworkiss" target="_blank">Tietoturva web-kehityksessä &amp; Zend Frameworkissä</a> </strong> from <strong><a href="http://www.slideshare.net/cvuorinen" target="_blank">cvuorinen</a></strong></div>
+
+<iframe style="border: 1px solid #CCC; border-width: 1px 1px 0; margin-bottom: 5px;" src="https://www.slideshare.net/slideshow/embed_code/15055214" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="427" height="356"></iframe>
+<div style="margin-bottom: 5px;"><strong> <a title="Tietoturva web-kehityksessä &amp; Zend Frameworkissä" href="https://www.slideshare.net/cvuorinen/tietoturva-webkehityksess-zend-frameworkiss" target="_blank">Tietoturva web-kehityksessä &amp; Zend Frameworkissä</a> </strong> from <strong><a href="https://www.slideshare.net/cvuorinen" target="_blank">cvuorinen</a></strong></div>
 And here is a video of my part of the presentation split into two parts (in Finnish):<br>
 [Part 1](http://www.youtube.com/watch?v=EE45mBY929Y&amp;list=UUKS_noOuXiwljOTWyeIbJOQ)<br>
 [Part 2](http://www.youtube.com/watch?v=aty-YE_6B88&amp;list=UUKS_noOuXiwljOTWyeIbJOQ)
