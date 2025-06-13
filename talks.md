@@ -6,6 +6,10 @@ permalink: /talks/
 
 This is a list of talks I have given at conferences:
 
+[**Build Your Own Reactivity: A Deep Dive Into Signals**](https://jsnation.com/)<br>
+Presented on Jun 12, 2025 at JSNation in Amsterdam, Netherlands<br>
+[ [Slides](https://cvuorinen.github.io/build-your-own-signals-slides/) ]<br>
+
 [**Testing Angular apps**](https://2018.ngvikings.org/schedule/day1?sessionId=120)<br>
 Presented on Mar 1, 2018 at ngVikings in Espoo, Finland<br>
 [ [Video](https://youtu.be/rjXJtIEQ3rw) |
