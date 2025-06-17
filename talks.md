@@ -6,7 +6,7 @@ permalink: /talks/
 
 This is a list of talks I have given at conferences:
 
-[**Build Your Own Reactivity: A Deep Dive Into Signals**](https://jsnation.com/)<br>
+[**Build Your Own Reactivity: A Deep Dive Into Signals**](https://gitnation.com/contents/build-your-own-reactivity-a-deep-dive-into-signals)<br>
 Presented on Jun 12, 2025 at JSNation in Amsterdam, Netherlands<br>
 [ [Slides](https://cvuorinen.github.io/build-your-own-signals-slides/) ]<br>
 
